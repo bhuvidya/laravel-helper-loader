@@ -81,7 +81,7 @@ files. You can do this in a way similar to caching your config files:
 $ php artisan helper-loader:cache
 ```
 
-If there the helper loader cache file exists, it is always loaded, even if you have updated or added to
+If the helper loader cache file exists, it is always loaded, even if you have updated or added to
 your helper modules. You can clear the cache file as follows:
 
 ```
