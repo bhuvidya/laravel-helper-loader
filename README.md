@@ -89,6 +89,12 @@ $ php artisan helper-loader:clear
 ```
 
 
+## Credits
+
+- [bhu Boue vidya](https://github.com/bhuvidya)
+- [All Contributors](../../contributors)
+
+
 ## License
 
 MIT
