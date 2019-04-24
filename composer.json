@@ -1,0 +1,44 @@
+{
+    "name": "bhuvidya/laravel-helper-loader",
+    "description": "Load multiple helpers from a source directory, providing support for them to be concatenated into a cache file in the bootstrap/cache directory.",
+    "authors": [
+        {
+            "name": "bhu Boue vidya",
+            "email": "bhuvidya@gmail.com",
+            "homepage": "https://github.com/bhuvidya",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "bhuvidya",
+        "laravel",
+        "helpers"
+    ],
+    "homepage": "https://github.com/bhuvidya/laravel-helper-loader",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1.3",
+        "laravel/framework": "5.5.*|5.6.*|5.7.*|5.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BhuVidya\\HelperLoader\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "source": "https://github.com/bhuvidya/laravel-helper-loader",
+        "issues": "https://github.com/bhuvidya/laravel-helper-loader/issues"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BhuVidya\\HelperLoader\\HelperLoaderServiceProvider"
+            ],
+            "aliases": {
+                "HelperLoader": "BhuVidya\\HelperLoader\\HelperLoaderFacade"
+            }
+        }
+    }
+}
