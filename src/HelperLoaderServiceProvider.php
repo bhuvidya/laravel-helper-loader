@@ -13,19 +13,21 @@ use BhuVidya\HelperLoader\Console\Commands\HelperLoaderClearCommand;
 class HelperLoaderServiceProvider extends BaseServiceProvider
 {
     /**
-     * Register the application services.
+     * Register the service.
      */
     public function register()
     {
-        $this->app->singleton('helper-loader', function () {
+        $this->app->singleton(HelperLoader::class, function () {
             return new HelperLoader($this->app, $this->app->files);
         });
+
+        $this->app->alias(HelperLoader::class, 'helper-loader');
 
         AliasLoader::getInstance()->alias('HelperLoader', HelperLoaderFacade::class);
     }
 
     /**
-     * Bootstrap the application services.
+     * Bootstrap the service.
      */
     public function boot()
     {
