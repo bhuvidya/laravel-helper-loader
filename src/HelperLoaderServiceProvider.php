@@ -44,9 +44,11 @@ class HelperLoaderServiceProvider extends BaseServiceProvider
         $this->app->make('helper-loader')->load();
 
         // comands
-        $this->commands([
-            HelperLoaderCacheCommand::class,
-            HelperLoaderClearCommand::class,
-        ]);
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                HelperLoaderCacheCommand::class,
+                HelperLoaderClearCommand::class,
+            ]);
+        }
     }
 }
