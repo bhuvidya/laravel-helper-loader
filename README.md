@@ -6,6 +6,8 @@
 [![Latest Unstable Version](https://poser.pugx.org/bhuvidya/laravel-helper-loader/v/unstable?format=flat-square)](https://packagist.org/packages/bhuvidya/laravel-helper-loader)
 
 
+**Note I have now switched the semver versioning for my Laravel packages to "match" the latest supported Laravel version.**
+
 Laravel Helper Loader is a package that will load multiple, custom "helper" modules from a given path. 
 This allows you to separate your custom helper functions into different php files. You can also
 cache multiple helper files into one, quick to load file, a la Laravel "config".
